@@ -1,0 +1,61 @@
+
+@media only screen and (max-width:768px){
+    .header{
+        height: 100%;
+        .banner{
+            width: 90%;
+            height: 100%;
+            text-align: center;
+    
+        h1{
+            font-size: 3rem;
+            color: white;
+        }
+        p{
+            color: white;
+        }
+         
+        }
+        .form__header{
+            width: 80%;
+            height: 100%;
+            form{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+           input{
+            width: 90%;
+           }
+           button{
+            width: 80%;
+          }
+            }
+        }
+    }
+  .about__content , .sale__content , .testimonial__content , .footer__content {
+   grid-template-columns: 1fr;
+  }
+  .price__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    .item{
+        width: 100%;
+    }
+  }
+  .testimonial__content{
+    .item{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+.why__content  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .footer__main{
+    grid-template-columns: 1fr 1fr;
+ }
+ }
+    

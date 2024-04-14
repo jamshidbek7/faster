@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Madimi+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ojuju:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  line-height: 1.4;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.title h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline;
+  font-size: 2.3rem;
+  border-left: 4px solid #1111ac;
+  text-indent: 10px;
+  padding-left: 10px;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+a {
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.header .banner {
+  width: 40%;
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header .banner h1 {
+  font-size: 5rem;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-weight: 700;
+  color: #020258;
+}
+
+.header .banner p {
+  margin-bottom: 0.5rem;
+}
+
+.header .banner button {
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1.3rem;
+  transition: all 0.5s linear;
+  background-color: #253e90;
+  color: white;
+}
+
+.header .banner button:hover {
+  background-color: rgb(50, 183, 188);
+  color: white;
+}
+
+.header .form__header {
+  background-color: #fff;
+  width: 70%;
+  height: 13vh;
+  box-shadow: -10px -10px 30px grey, 10px 10px 30px white;
+  margin: 0 auto;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.header .form__header form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .form__header form input {
+  width: 40%;
+  height: 7vh;
+  border: 0;
+  border: 2px solid #020258;
+  text-indent: 10px;
+  font-size: 1rem;
+}
+
+.header .form__header form button {
+  width: 15%;
+  height: 6vh;
+  border: 0;
+  background-color: #b96b12;
+  color: white;
+  font-size: 1rem;
+}
+
+.navigation {
+  width: 100%;
+  height: 7vh;
+}
+
+.navigation .navbar {
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .navbar .navbar__nav a {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 16px;
+  margin-right: 15px;
+}
+
+.about {
+  width: 100%;
+  padding: 4rem 0;
+  background-image: url(/images/square.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.about__content h2 {
+  border-left: 4px solid #1111ac;
+  text-indent: 10px;
+}
+
+.about__content button {
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1.3rem;
+  transition: all 0.5s linear;
+  background-color: green;
+  color: white;
+}
+
+.about__content button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.sale {
+  width: 100%;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.sale .title {
+  margin-bottom: 3rem;
+}
+
+.sale .title h2 {
+  text-indent: 10px;
+}
+
+.sale button {
+  margin-top: 1rem;
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1.3rem;
+  transition: all 0.5s linear;
+  background-color: rgb(34, 2, 141);
+  color: white;
+}
+
+.sale button:hover {
+  background-color: rgb(225, 15, 15);
+  color: white;
+}
+
+.sale__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.price {
+  width: 100%;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.price .title {
+  margin-bottom: 2rem;
+}
+
+.price__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.price__content .item {
+  width: 400px;
+  height: 300px;
+}
+
+.price__content .item .item__header {
+  background-color: #020258;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+.price__content .item .item__header span,
+.price__content .item .item__header h3 {
+  font-weight: 900;
+}
+
+.price__content .item .item__main {
+  padding: 2rem 10px;
+  background-color: #1111ac;
+  color: #fff;
+  transition: all 0.5s linear;
+}
+
+.price__content .item .item__main h3 {
+  font-weight: 900;
+}
+
+.price__content .item .item__footer {
+  padding: 2rem 10px;
+}
+
+.price__content .item .item__footer button {
+  padding: 8px 15px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1.3rem;
+  transition: all 0.5s linear;
+  background-color: #070e88;
+  color: white;
+}
+
+.price__content .item .item__footer button:hover {
+  background-color: green;
+  color: white;
+}
+
+.price__content .item:hover .item__main {
+  background-color: rgb(128, 0, 17);
+}
+
+.price__content .item:hover .item__footer button {
+  background-color: rgb(210, 11, 31);
+}
+
+.forHouse {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.forhouse__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.forhouse__content button {
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1.3rem;
+  transition: all 0.5s linear;
+  background-color: #1111ac;
+  color: white;
+  margin-top: 1rem;
+}
+
+.forhouse__content button:hover {
+  background-color: green;
+  color: white;
+}
+
+.forhouse__content .item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.forhouse__content .item .img:first-of-type {
+  height: 100%;
+}
+
+.forhouse__content .item .img:last-of-type {
+  height: 80%;
+}
+
+.why {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #1111ac;
+  text-align: center;
+}
+
+.why .title {
+  margin-bottom: 3rem;
+}
+
+.why .title h2 {
+  color: #fff;
+  border-left: 5px solid #fff;
+}
+
+.why button {
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1.3rem;
+  transition: all 0.5s linear;
+  background-color: rgb(188, 175, 0);
+  color: white;
+}
+
+.why button:hover {
+  background-color: #9797b1;
+  color: white;
+}
+
+.why button:hover {
+  box-shadow: 0px 0px 20px white;
+}
+
+.why__content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.why__content .item .img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why__content .item .img h3 {
+  font-weight: 700;
+}
+
+.why__content .item .img img {
+  height: 90px;
+  width: 80px;
+  margin-bottom: 0.4rem;
+}
+
+.testimonial {
+  width: 100%;
+  padding: 4rem 0;
+}
+.testimonial .title {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.testimonial__content {
+  border: 1px solid black;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 3rem;
+  align-items: center;
+}
+.testimonial__content img {
+  width: 150px;
+  height: 150px;
+}
+
+.footer {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #070e88;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+.footer__content iframe {
+  width: 100%;
+  height: 60vh;
+}
+.footer__content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__content form input {
+  height: 7vh;
+  border: 0;
+  outline: 0;
+  text-indent: 10px;
+  font-size: 1rem;
+}
+.footer__content form textarea {
+  height: 10vh;
+  border: 0;
+  outline: 0;
+  text-indent: 10px;
+  font-size: 1rem;
+}
+.footer__content form button {
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1.3rem;
+  transition: all 0.5s linear;
+  background-color: rgb(4, 159, 7);
+  color: white;
+}
+.footer__content form button:hover {
+  background-color: rgb(19, 4, 101);
+  color: weight;
+}
+
+.footer__main {
+  border-bottom: 3px solid rgb(142, 109, 0);
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+.footer__main .item {
+  color: 1;
+  color: antiquewhite;
+}
+.footer__main a {
+  display: block;
+  color: rgb(255, 252, 248);
+}
+.footer__main form {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__main form input {
+  height: 5vh;
+  text-indent: 10px;
+}
+.footer__main form button {
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1.3rem;
+  transition: all 0.5s linear;
+  background-color: rgb(237, 183, 8);
+  color: rgb(242, 250, 242);
+}
+.footer__main form button:hover {
+  background-color: rgb(7, 18, 167);
+  color: white;
+}
+
+.social {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.copy {
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}/*# sourceMappingURL=style.css.map */
